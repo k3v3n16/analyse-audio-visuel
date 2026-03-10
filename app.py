@@ -12,13 +12,13 @@ import io
 # -----------------------------
 
 KEYWORDS = [
-    "audio", "audiovisuel", "audio-visuel", "A/V",
-    "sonorisation", "projecteur", "écran", "micro", "ensemble de projection", "projection", "ensemble"
+    "audio", "audiovisuel", "audio visuel", "A/V", "Multiprise", "Extension"
+    "sonorisation", "projecteur", "écran", "micro", "ensemble de projection", "projection", "ensemble", "encore", "Encore"
 ]
 
 DATE_REGEX = r"\b(\d{1,2}[/-]\d{1,2}[/-]\d{2,4}|\d{1,2} [A-Za-zéû]+ 20\d{2})\b"
-SALLE_REGEX = r"(Salle\s?[A-Za-z0-9-]+|Local\s?[A-Za-z0-9-]+|Auditorium|Bloc\s?[A-Z0-9]+)"
-AV_REGEX = r"(micro(?:phone)?|projecteur|écran|haut-?parleurs?|HDMI|ordinateur)"
+SALLE_REGEX = r"(Salle\s?[A-Za-z0-9-]+|EMPLACEMENT\s?[A-Za-z0-9-]+|HALL|Bloc\s?[A-Z0-9]+)"
+AV_REGEX = r"(micro(?:phone)?|projection|écran|haut-?parleurs?|HDMI|ordinateur)"
 
 # -----------------------------
 # OCR
@@ -132,3 +132,4 @@ if uploaded_file:
             mime="application/pdf"
 
         )
+
