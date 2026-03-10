@@ -13,7 +13,7 @@ import io
 
 KEYWORDS = [
     "audio", "audiovisuel", "audio-visuel", "A/V",
-    "sonorisation", "projecteur", "écran", "micro"
+    "sonorisation", "projecteur", "écran", "micro", "ensemble de projection", "projection", "ensemble"
 ]
 
 DATE_REGEX = r"\b(\d{1,2}[/-]\d{1,2}[/-]\d{2,4}|\d{1,2} [A-Za-zéû]+ 20\d{2})\b"
@@ -130,4 +130,5 @@ if uploaded_file:
             data=filtered_pdf,
             file_name="pages_audio_visuel.pdf",
             mime="application/pdf"
+
         )
